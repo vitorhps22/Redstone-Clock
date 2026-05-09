@@ -1,5 +1,14 @@
 {
   "variants": {
+    "facing=north,lit=false,powered=false": {
+      "model": "redstoneclock:block/redstone_clock"
+    },
+    "facing=north,lit=false,powered=true": {
+      "model": "redstoneclock:block/redstone_clock_powered"
+    },
+    "facing=north,lit=true": {
+      "model": "redstoneclock:block/redstone_clock_lit"
+    },
     "facing=east,lit=false,powered=false": {
       "model": "redstoneclock:block/redstone_clock",
       "y": 90
@@ -11,15 +20,6 @@
     "facing=east,lit=true": {
       "model": "redstoneclock:block/redstone_clock_lit",
       "y": 90
-    },
-    "facing=north,lit=false,powered=false": {
-      "model": "redstoneclock:block/redstone_clock"
-    },
-    "facing=north,lit=false,powered=true": {
-      "model": "redstoneclock:block/redstone_clock_powered"
-    },
-    "facing=north,lit=true": {
-      "model": "redstoneclock:block/redstone_clock_lit"
     },
     "facing=south,lit=false,powered=false": {
       "model": "redstoneclock:block/redstone_clock",
@@ -44,6 +44,30 @@
     "facing=west,lit=true": {
       "model": "redstoneclock:block/redstone_clock_lit",
       "y": 270
+    },
+    "facing=up,lit=false,powered=false": {
+      "model": "redstoneclock:block/redstone_clock",
+      "x": -90
+    },
+    "facing=up,lit=false,powered=true": {
+      "model": "redstoneclock:block/redstone_clock_powered",
+      "x": -90
+    },
+    "facing=up,lit=true": {
+      "model": "redstoneclock:block/redstone_clock_lit",
+      "x": -90
+    },
+    "facing=down,lit=false,powered=false": {
+      "model": "redstoneclock:block/redstone_clock",
+      "x": 90
+    },
+    "facing=down,lit=false,powered=true": {
+      "model": "redstoneclock:block/redstone_clock_powered",
+      "x": 90
+    },
+    "facing=down,lit=true": {
+      "model": "redstoneclock:block/redstone_clock_lit",
+      "x": 90
     }
   }
 }
