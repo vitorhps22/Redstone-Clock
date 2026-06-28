@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 public class RedstoneClockBlockEntity extends BlockEntity implements MenuProvider, Nameable {
 	public static final int NUM_SLOT = 0;
 	public static final int NUM_DATA = 4;
-	public static final int BOUND_MULTIPLIER = 6;
+	public static final int BOUND_MULTIPLIER = 7;
 	public static final int DATA_SIGNAL_STRENGTH = 0;
 	public static final int DATA_ACTIVE_INTERVAL = 1;
 	public static final int DATA_IDLE_INTERVAL = 2;
