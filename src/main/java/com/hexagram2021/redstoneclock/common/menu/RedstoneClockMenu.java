@@ -24,6 +24,7 @@ public class RedstoneClockMenu extends AbstractContainerMenu {
 			case 2 -> 200;
 			case 3 -> 2000;
 			case 4 -> 20000;
+			case 5 -> 200000;
 			default -> 2;
 		};
 	}
@@ -50,13 +51,13 @@ public class RedstoneClockMenu extends AbstractContainerMenu {
 					1, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_SIGNAL_STRENGTH) - 1
 			));
 			case 2 -> this.setData(RedstoneClockBlockEntity.DATA_ACTIVE_INTERVAL, Math.min(
-					24000, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_ACTIVE_INTERVAL) + toMultiplier(this.multiplier)
+					240000, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_ACTIVE_INTERVAL) + toMultiplier(this.multiplier)
 			));
 			case 3 -> this.setData(RedstoneClockBlockEntity.DATA_ACTIVE_INTERVAL, Math.max(
 					2, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_ACTIVE_INTERVAL) - toMultiplier(this.multiplier)
 			));
 			case 4 -> this.setData(RedstoneClockBlockEntity.DATA_IDLE_INTERVAL, Math.min(
-					24000, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_IDLE_INTERVAL) + toMultiplier(this.multiplier)
+					240000, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_IDLE_INTERVAL) + toMultiplier(this.multiplier)
 			));
 			case 5 -> this.setData(RedstoneClockBlockEntity.DATA_IDLE_INTERVAL, Math.max(
 					2, this.redstoneClock.get(RedstoneClockBlockEntity.DATA_IDLE_INTERVAL) - toMultiplier(this.multiplier)
